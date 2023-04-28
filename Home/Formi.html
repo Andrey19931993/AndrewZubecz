@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td width="350">
+    
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <h4>Простая форма поиска с вариантами:</h4>
+        <fieldset>
+            <legend>Строка поиска</legend> 
+            
+            <input type="text" name="test1" maxlength="10">
+            <input type="submit" value="Искать" name="test2"><br>
+            <input type="radio" id="our_site" name="site" value="our_site" checked>
+            <label for="our_site">На сайте</label>
+            <input type="radio" id="google_site" name="site" value="google_site">
+            <label for="google_site">В google</label>
+        </fieldset>
+
+          
+         
+          
+          <form action="http://fe.it-academy.by/TestForm.php"></form>
+            <h4>Простая форма авторизации:</h4>
+            <fieldset>
+                 <legend>Авторизируйтесь</legend> 
+                <input type="text" name="Login" required> *Логин <br>
+                <input type="password" name="pass"> *Пароль <br>
+                <input type="checkbox" value="in_system" name="chek_system"> Оставаться в системе <br>
+                <input type="submit" value="Войти">
+            
+
+            </fieldset>
+          </form>   
+          <form action="http://fe.it-academy.by/TestForm.php">
+            <h4>Отзыв</h4>
+            <fieldset>
+                <legend>Оставьте Ваш отзыв</legend> 
+                <input type="text" name="name" required> *Имя <br>
+                <input type="email" name="email" required pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i"> *email <br>
+                <textarea name="comment" id="comment" cols="20" rows="3">Формат отправки</textarea>
+                <input type="submit" value="Отправить">
+
+            </fieldset>
+                
+          </form>
+          <form action="http://fe.it-academy.by/TestForm.php">
+            <h4>Загрузка файла на сервер:</h4>
+            <fieldset>
+                <legend>Upload </legend> <br>
+                <p>Файл:</p>  <br>
+                <input type="file" name="f" ><br>
+                <p>Срок хранения (года):</p><br>
+                <input type="number" name="yers">
+                <input type="submit" enctype="multipart/form-data"  value="Загрузить">
+
+
+
+            </fieldset>
+          </form>
+        
+
+        
+    
+
+    
+</body>
+</html>
