@@ -8,7 +8,9 @@
 </head>
 <body>
     <table>
+
         <tr>
+
             <td width="350">
     
             <form action="http://fe.it-academy.by/TestForm.php" method="post">
@@ -21,14 +23,40 @@
             <input type="radio" id="our_site" name="site" value="our_site" checked>
             <label for="our_site">На сайте</label>
             <input type="radio" id="google_site" name="site" value="google_site">
-            <label for="google_site">В google</label>
+            <label for="google_site">В google</label> 
         </fieldset>
+        </form>
+        </td>
 
+
+        
+            <td width="350">
+    
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <h4>Простая форма поиска с вариантами:</h4>
+        <fieldset>
+            <legend>Строка поиска</legend> 
+            
+            <input type="text" name="search" autofocus required>*
+            <input type="submit" value="Искать"> <br>
+            <input type="radio" name="radio" value="site">на сайте
+            <input type="radio" name="radio" value="google" checked> В google
+            
+            
+        </fieldset>
+        </form>
+        </td>
+        </tr>
+       
+          <tr>
+
+         <td width="350"> 
+            
           
-         
-          
-          <form action="http://fe.it-academy.by/TestForm.php"></form>
+          <form action="http://fe.it-academy.by/TestForm.php">
             <h4>Простая форма авторизации:</h4>
+                
+            
             <fieldset>
                  <legend>Авторизируйтесь</legend> 
                 <input type="text" name="Login" required> *Логин <br>
@@ -38,7 +66,35 @@
             
 
             </fieldset>
-          </form>   
+          </form>
+        </td>
+    
+    
+        <td>
+
+        <form action="http://fe.it-academy.by/TestForm.php">
+          <h4>Опрос(голосование):</h4>
+          <fieldset>
+               <legend>Как вам?</legend> 
+               <input type="radio" name="opros" value="value_1">ничего <br>
+               <input type="radio" name="opros" value="value_2">неплохо <br>
+               <input type="radio" name="opros" value="value_3">хорошо <br>
+               <input type="radio" name="opros" value="value_4">супер <br>
+               <input type="submit" value="Отправить">
+               <input type="text" name="date_voite" value="2013.12.31">
+               
+               
+            </fieldset>
+        </form>
+      </td>
+    </tr>
+
+    <tr>
+    
+          
+         <td>
+            
+
           <form action="http://fe.it-academy.by/TestForm.php">
             <h4>Отзыв</h4>
             <fieldset>
@@ -51,6 +107,58 @@
             </fieldset>
                 
           </form>
+        </td>
+
+        <td width="350">
+        
+          <form action="http://fe.it-academy.by/TestForm.php">
+            <h4>Выпадающий и мульти списки:</h4>
+            <fieldset>
+                <legend>Города РБ</legend> 
+                <select name="goroda">
+                    <optgroup label="Города РБ">
+                         <option value="1">Брест</option>
+                         <option value="2">Минск</option>
+                         <option value="3">Витебск</option>
+                    </optgroup>
+                    <optgroup label="Города Росси">
+                         <option value="4">Москва</option>
+                         <option value="5">Рязань</option>
+                         <option value="6">Магадан</option>
+                    </optgroup>
+
+                    <select name="goroda_2" size="8">
+                        
+                        <optgroup label="Города РБ">
+                            <option value="1">Брест</option>
+                            <option value="2">Минск</option>
+                            <option value="3">Витебск</option>
+                       </optgroup>
+                       <optgroup label="Города Росси">
+                        <option value="4">Москва</option>
+                        <option value="5">Рязань</option>
+                        <option value="6">Магадан</option>
+                        </optgroup>
+                        <input type="submit" value="OK"> 
+                </fieldset>
+            </form>
+                    </td>
+                </tr>
+                        
+
+                    
+
+
+            </fieldset>
+                
+          </form>
+          </td>
+          </tr>
+
+          <tr>
+
+            <td>
+
           <form action="http://fe.it-academy.by/TestForm.php">
             <h4>Загрузка файла на сервер:</h4>
             <fieldset>
@@ -61,10 +169,27 @@
                 <input type="number" name="yers">
                 <input type="submit" enctype="multipart/form-data"  value="Загрузить">
 
+                <td width="350">
 
-
-            </fieldset>
-          </form>
+                    <form action="http://fe.it-academy.by/TestForm.php">
+                      <h4>Валидация данных HTML5:</h4>
+                      <fieldset>
+                          <legend>Строка поиска</legend> <br>
+                          <input type="text" name="russian" placeholder="Только русские буквы" pattern="^[а-яА-ЯеЁ]+$"> <br>
+                          <input type="text" name="phone" placeholder="+375-29-123-45-67" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$">
+                          
+                          <input type="submit" value="Загрузить">
+          
+          
+          
+                      </fieldset>
+                    </form>
+                   </td>
+                </tr>
+            </table>
+          
+         
+         
         
 
         
